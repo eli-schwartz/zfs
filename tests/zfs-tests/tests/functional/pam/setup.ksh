@@ -22,7 +22,7 @@
 
 . $STF_SUITE/tests/functional/pam/utilities.kshlib
 
-if ! which pamtester; then
+if ! command -v pamtester; then
         log_unsupported "pam tests require the pamtester utility to be installed"
 fi
 

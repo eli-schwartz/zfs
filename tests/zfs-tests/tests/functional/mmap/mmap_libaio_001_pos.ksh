@@ -42,7 +42,7 @@ verify_runnable "global"
 log_assert "verify mmap'd pages work with libaio"
 
 # mmap_libaio is built when the libaio-devel package is installed.
-if ! which mmap_libaio; then
+if ! command -v mmap_libaio; then
 	log_unsupported "This test requires mmap_libaio."
 fi
 
